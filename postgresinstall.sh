@@ -16,4 +16,5 @@ apt install postgresql-15 postgresql-client -y
 su - postgres -c "psql -c \"ALTER USER postgres PASSWORD 'MonSer09Zbx34Prx';\""
 
 # Step 7: Check PostgreSQL service status
+systemctl enable postgresql
 systemctl status postgresql
