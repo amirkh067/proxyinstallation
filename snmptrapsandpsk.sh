@@ -30,6 +30,7 @@ sudo sed -i 's/^mibs :$/#mibs :/' /etc/snmp/snmp.conf
 # Edit /usr/bin/zabbix_trap_receiver.pl to change the trap file location
 sudo sed -i "s|\$SNMPTrapperFile = '/tmp/zabbix_traps.tmp'|\$SNMPTrapperFile = '/var/log/snmptrap/snmptrap.log'|" /usr/bin/zabbix_trap_receiver.pl
 
+sudo setcap 'cap_net_bind_service=+ep' /usr/sbin/snmptrapd
 
 # Restart SNMP service to apply the changes
 sudo systemctl restart snmptrapd
