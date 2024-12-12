@@ -22,7 +22,7 @@ chown -R zabbix:zabbix /usr/lib/zabbix/externalscripts/*
 chmod u+x /usr/lib/zabbix/externalscripts/*
 mv /usr/lib/zabbix/externalscripts/externalscripts/* .
 rm -rf /usr/lib/zabbix/externalscripts/externalscripts
-apt install python3-pip
+apt install python3-pip -y
 pip3 install urllib3==1.25.11 pyvmomi==7.0.3 requests==2.22 cryptography==3.4.8 py-zabbix python-dateutil pywbem
 #pip3 install --no-index --find-links=. urllib3==1.25.11 pyvmomi==7.0.3 requests==2.22 cryptography==3.4.8 py-zabbix python-dateutil pywbem
 
