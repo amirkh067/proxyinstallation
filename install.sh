@@ -10,7 +10,7 @@ sleep 1
 /tmp/proxyinstallation/snmptrapdservicefix.sh
 sleep 1
 mv /etc/zabbix/zabbix/zabbix_proxy.conf /etc/zabbix/zabbix/zabbix_proxy.conf_orig
-cp /tmp/proxyinstallation/zabbix_proxy.conf mv /etc/zabbix/zabbix/zabbix_proxy.conf
+cp /tmp/proxyinstallation/zabbix_proxy.conf /etc/zabbix/zabbix/zabbix_proxy.conf
 /tmp/proxyinstallation/customscriptscommand.sh
 sleep 1
 /tmp/proxyinstallation/enableservices.sh
