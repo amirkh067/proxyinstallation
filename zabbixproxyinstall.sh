@@ -33,6 +33,8 @@ apt update
 # Step 4: Install Zabbix Proxy for PostgreSQL and Zabbix SQL scripts
 apt install zabbix-proxy-pgsql zabbix-sql-scripts -y
 
+echo "MonSer09Zbx34Prx"
+
 # Step 5: Create Zabbix user in PostgreSQL with a password prompt
 sudo -u postgres createuser --pwprompt zabbix
 
